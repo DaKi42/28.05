@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import {Card} from './components/cards';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='pricing-container'>
+            <Card tarif="Basic" information="Basic support and limited features." price="$0.99"></Card>
+            <Card tarif="Standard" information="Standard support and additional features." price="$2.99"></Card>
+            <Card tarif="Premium" information="Premium support and all features included." price="$5.99"></Card>
+        </div>
+    );
 }
 
 export default App;
